@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+@model BoardGameCollection.Models.BoardGame
+
+<h1>Boardgame Details</h1> 
+<hr />
+<h4>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h4>
+<h4>@Html.DisplayNameFor(model => model.MaxPlayers): @Html.DisplayFor(model => model.MaxPlayers)</h4>
+<h4>@Html.DisplayNameFor(model => model.Cooperative): @Html.DisplayFor(model => model.Cooperative)</h4>
+<p>@Html.ActionLink("Return to List", "Index")</p>

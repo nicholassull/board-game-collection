@@ -2,6 +2,8 @@
   Layout = "_Layout";
 }
 
+@using System;
+
 @model BoardGameCollection.Models.BoardGame
 
 <h1>Enter the information for your boardgame below: </h1>
@@ -9,6 +11,16 @@
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
+  @Html.LabelFor(model => model.MaxPlayers)
+  @Html.EditorFor(model => model.MaxPlayers,
+  new { htmlAttributes = new {
+    @type = "number", @min = "0", @max = "12", @step = "1"
+  }})
+  @Html.LabelFor(model => model.Cooperative)
+  @Html.EditorFor(model => model.Cooperative,
+  new { htmlAttributes = new {
+    @type = "bool"
+  }})
   <input type="submit" value="Add new boardgame" />
 }
 <p>@Html.ActionLink("Show all Boardgames", "Index")</p>

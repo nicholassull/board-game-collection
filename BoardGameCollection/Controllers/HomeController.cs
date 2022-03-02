@@ -6,7 +6,7 @@ namespace BoardGameCollection.Controllers
   public class HomeController : Controller
   {
     [HttpGet("/")]
-    public ActionResult Form()
+    public ActionResult Index()
     {
       return View();
     }
