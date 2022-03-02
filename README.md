@@ -1,9 +1,9 @@
 <!-- Change to Project Name -->
-# _To Do List in C#_
+# _Board Game Collection_
 
 #### By _**Nick Sullivan**_
 
-#### _A simple to do list tracker._
+#### _Track your board games!_
 
 ## Technologies Used
 
@@ -12,28 +12,7 @@
 * _ASP.NET Core_
 * _Bootstrap_
 * _Razor View Engine_
-
-## Description
-
-_This simple web application allows users input different items that will then be added to a list and displayed. This project is meant to showcase my understanding of ASP.NET Core and MVC web applications._
-
-## Setup Instructions
-
-* _Open your terminal and navigate to the folder you'd like to download the files into._
-* _Run the command below_
-> git clone https://github.com/nicholassull/to-do-list-c-sharp.git
-* _Navigate to ToDoList.Solution/ToDoList in your terminal._
-* _Run the commands below_
->dotnet restore
-
->dotnet build
-
->dotnet run
-* _Copy and paste the local host URL provided in the terminal into a web browser and enjoy!_
-
-## Known Bugs
-
-* _No known bugs at this time._
+* _Entity Framework_
 
 ## License
 
